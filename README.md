@@ -14,7 +14,7 @@ echo "options snd-hda-intel index=0
 options snd-usb-audio index=1" | sudo tee /etc/modprobe.d/snd-card-order.conf
 ```
 
-* Increase the "Headphone" volume (applies to speakers as well):
+* Increase the Headphone volume (applies to the internal speakers as well, for some reason):
 
 ```
 amixer -c 1 set 'Headphone',0 3
