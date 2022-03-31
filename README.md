@@ -1,7 +1,7 @@
 # gateway-linux-fixes
 Various fixes for newer (Gemini Lake-based) Gateway laptops on Linux
 
-Tested on a Gateway Flip 11 (GWTC116-2), using Arch Linux and Xfce4.
+Tested on a 2020 Gateway Flip 11 (GWTC116-2), using Arch Linux and Xfce4.
 
 ## Audio
 
