@@ -1,7 +1,7 @@
 # gateway-linux-fixes
 Various fixes for newer (Gemini Lake-based) Gateway laptops on Linux
 
-Tested on a Gateway Flip 11 (GWTC116-2), using Arch Linux and XFCE4.
+Tested on a Gateway Flip 11 (GWTC116-2), using Arch Linux and Xfce4.
 
 ## Audio
 
@@ -10,8 +10,8 @@ Tested on a Gateway Flip 11 (GWTC116-2), using Arch Linux and XFCE4.
 * Force a specific ALSA card order:
 
 ```
-options snd-hda-intel index=0
-options snd-usb-audio index=1
+echo "options snd-hda-intel index=0
+options snd-usb-audio index=1" | sudo tee /etc/modprobe.d/snd-card-order.conf
 ```
 
 * Increase the "Headphone" volume (applies to speakers as well):
