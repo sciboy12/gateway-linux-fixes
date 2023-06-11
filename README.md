@@ -25,6 +25,8 @@ amixer -c 1 set 'Headphone',0 3
 ```
 echo "options snd-hda-intel power_save=0" | sudo tee /etc/modprobe.d/snd-hda-intel.conf
 ```
+* If using TLP, disable `SOUND_POWER_SAVE_ON_AC` and `SOUND_POWER_SAVE_ON_BAT`
+
 ## WiFi
 
 This process needs to be repeated for all kernel updates:
